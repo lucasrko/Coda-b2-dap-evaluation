@@ -84,11 +84,11 @@ Une section par test en échec : renseignez ses quatre champs.
 
 ## testRefreshingTwiceWithTheSameTokenIsUnauthorized
 
-**Symptôme** :
+**Symptôme** : attendu 401 ,    
 
-**Cause** :
+**Cause** : gesdinet_jwt_refresh_token.yaml:5
 
-**Règle du module en jeu** :
+**Règle du module en jeu** : Possibilité de refresh avec le même token
 
 **Correctif** :
 
