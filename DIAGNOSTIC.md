@@ -56,15 +56,15 @@ Une section par test en échec : renseignez ses quatre champs.
 
 **Symptôme** :
 
-**Cause** :
+**Cause** : KitchenTicket.php:21
 
 **Règle du module en jeu** :
 
-**Correctif** :
+**Correctif** : security: "is_granted'(ROLE_USER)'",
 
 ## testOpeningAnOrderIgnoresAnAbandonedOne
 
-**Symptôme** :
+**Symptôme** : 
 
 **Cause** :
 
@@ -84,13 +84,13 @@ Une section par test en échec : renseignez ses quatre champs.
 
 ## testRefreshingTwiceWithTheSameTokenIsUnauthorized
 
-**Symptôme** : attendu 401 ,    
+**Symptôme** : attendu 401 , reçu 200  
 
 **Cause** : gesdinet_jwt_refresh_token.yaml:5
 
 **Règle du module en jeu** : Possibilité de refresh avec le même token
 
-**Correctif** :
+**Correctif** : single_use: true
 
 ## testRemovingALineFromSomeoneElsesOrderIsForbidden
 
